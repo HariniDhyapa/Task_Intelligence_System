@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-"""
-Enterprise System Validation Script
-Validates all components before deployment
-"""
 
 import os
 import json
@@ -53,7 +48,7 @@ class SystemValidator:
             if not model_params:
                 self.errors.append(f"Missing model parameters for type: {model_type}")
             
-            self.logger.info("✓ Configuration validation passed")
+            self.logger.info(" Configuration validation passed")
             return True
             
         except Exception as e:
@@ -80,7 +75,7 @@ class SystemValidator:
             self.errors.extend([f"Missing required file: {f}" for f in missing_files])
             return False
         
-        self.logger.info("✓ All required files present")
+        self.logger.info(" All required files present")
         return True
     
     def validate_task_bank(self) -> bool:
@@ -107,7 +102,7 @@ class SystemValidator:
                 if not (5 <= karma_reward <= 20):
                     self.warnings.append(f"Task {task_id} karma_reward {karma_reward} outside range [5-20]")
             
-            self.logger.info(f"✓ Task bank validated ({len(task_bank)} tasks)")
+            self.logger.info(f" Task bank validated ({len(task_bank)} tasks)")
             return True
             
         except Exception as e:
@@ -131,7 +126,7 @@ class SystemValidator:
                 if route not in routes:
                     self.errors.append(f"Missing API route: {route}")
             
-            self.logger.info("✓ API structure validation passed")
+            self.logger.info(" API structure validation passed")
             return True
             
         except Exception as e:
@@ -165,20 +160,20 @@ class SystemValidator:
         self.logger.info("=" * 50)
         
         if self.errors:
-            self.logger.error(f"❌ VALIDATION FAILED - {len(self.errors)} errors found:")
+            self.logger.error(f"VALIDATION FAILED - {len(self.errors)} errors found:")
             for error in self.errors:
                 self.logger.error(f"  • {error}")
         
         if self.warnings:
-            self.logger.warning(f"⚠️  {len(self.warnings)} warnings:")
+            self.logger.warning(f" {len(self.warnings)} warnings:")
             for warning in self.warnings:
                 self.logger.warning(f"  • {warning}")
         
         if all_passed and not self.errors:
-            self.logger.info("✅ ALL VALIDATIONS PASSED")
+            self.logger.info(" ALL VALIDATIONS PASSED")
             self.logger.info("System is ready for deployment!")
         else:
-            self.logger.error("❌ SYSTEM NOT READY")
+            self.logger.error(" SYSTEM NOT READY")
             self.logger.error("Please fix the errors above before deployment")
         
         return all_passed and not self.errors
@@ -192,7 +187,7 @@ def main():
         sys.exit(1)
     
     print("\n" + "=" * 50)
-    print("🎉 SYSTEM VALIDATION COMPLETED SUCCESSFULLY!")
+    print(" SYSTEM VALIDATION COMPLETED SUCCESSFULLY!")
     print("Your Task Intelligence Engine is ready for deployment.")
     print("=" * 50)
 
