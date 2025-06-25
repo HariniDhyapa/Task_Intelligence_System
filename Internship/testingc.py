@@ -113,7 +113,7 @@ test_cases = [
 # Run test cases
 print("\n==================== TESTING RECOMMENDATIONS ====================\n")
 for test in test_cases:
-    print(f"🧪 Testing for User: {test['user_id']} | Context: {test['context']}")
+    print(f" Testing for User: {test['user_id']} | Context: {test['context']}")
     output = engine.generate_tasks(
         user_id=test["user_id"],
         context=test["context"],
