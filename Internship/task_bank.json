@@ -1,0 +1,178 @@
+{
+  "ch_quiz_python_001": {
+    "title": "Take a Python Data Structures Quiz",
+    "type": "duel",
+    "goal_tags": ["SDE", "Coding"],
+    "interests": ["python", "coding"],
+    "karma_reward": 12,
+    "category": "academic",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["quiz_attempts == 0"],
+    "description": "Test your knowledge of Python lists, dictionaries, and sets"
+  },
+  "ch_peer_help_003": {
+    "title": "Answer a peer question in 'Internships'",
+    "type": "duel",
+    "goal_tags": ["Career", "Networking"],
+    "interests": ["internships", "career"],
+    "karma_reward": 8,
+    "category": "social",
+    "difficulty": "beginner",
+    "trigger_conditions": ["buddies_interacted == 0"],
+    "description": "Help a fellow student with internship-related queries"
+  },
+  "ch_resume_update_005": {
+    "title": "Update your resume with latest projects",
+    "type": "solo",
+    "goal_tags": ["SDE", "Career"],
+    "interests": ["resume", "professional"],
+    "karma_reward": 15,
+    "category": "professional",
+    "difficulty": "beginner",
+    "trigger_conditions": ["last_resume_upload > 30_days"],
+    "description": "Keep your resume current with recent achievements"
+  },
+  "ch_dsa_challenge_007": {
+    "title": "Solve 3 Array Problems on LeetCode",
+    "type": "solo",
+    "goal_tags": ["SDE", "Coding"],
+    "interests": ["coding", "algorithms"],
+    "karma_reward": 18,
+    "category": "academic",
+    "difficulty": "advanced",
+    "trigger_conditions": ["coding_streak < 3"],
+    "description": "Practice array manipulation and algorithmic thinking"
+  },
+  "ch_gre_vocab_009": {
+    "title": "Learn 20 new GRE vocabulary words",
+    "type": "solo",
+    "goal_tags": ["GRE", "Academia"],
+    "interests": ["vocabulary", "test_prep"],
+    "karma_reward": 10,
+    "category": "academic",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["gre_prep_days < 5"],
+    "description": "Expand your vocabulary for GRE verbal section"
+  },
+  "ch_network_post_011": {
+    "title": "Share an insightful tech article with analysis",
+    "type": "duel",
+    "goal_tags": ["Networking", "Tech"],
+    "interests": ["technology", "sharing"],
+    "karma_reward": 12,
+    "category": "social",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["posts_today == 0"],
+    "description": "Contribute valuable content to the community"
+  },
+  "ch_mock_interview_013": {
+    "title": "Complete a mock technical interview",
+    "type": "remedial",
+    "goal_tags": ["SDE", "Interview"],
+    "interests": ["interview_prep", "coding"],
+    "karma_reward": 20,
+    "category": "professional",
+    "difficulty": "advanced",
+    "trigger_conditions": ["interview_prep_score < 70"],
+    "description": "Practice coding interviews with peer feedback"
+  },
+  "ch_study_group_015": {
+    "title": "Join or create a study group for upcoming exams",
+    "type": "solo",
+    "goal_tags": ["Academia", "Collaboration"],
+    "interests": ["studying", "group_work"],
+    "karma_reward": 14,
+    "category": "social",
+    "difficulty": "beginner",
+    "trigger_conditions": ["study_group_participation == 0"],
+    "description": "Collaborative learning for better outcomes"
+  },
+  "ch_project_showcase_017": {
+    "title": "Present your latest project to the community",
+    "type": "duel",
+    "goal_tags": ["SDE", "Portfolio"],
+    "interests": ["projects", "presentation"],
+    "karma_reward": 16,
+    "category": "professional",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["project_showcase_count < 2"],
+    "description": "Get feedback and recognition for your work"
+  },
+  "ch_mentor_connect_019": {
+    "title": "Connect with an alumni mentor in your field",
+    "type": "solo",
+    "goal_tags": ["Career", "Networking"],
+    "interests": ["mentorship", "career"],
+    "karma_reward": 18,
+    "category": "professional",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["mentor_connections == 0"],
+    "description": "Build valuable professional relationships"
+  },
+  "ch_research_paper_021": {
+    "title": "Read and summarize a recent research paper",
+    "type": "solo",
+    "goal_tags": ["Research", "Academia"],
+    "interests": ["research", "academic"],
+    "karma_reward": 15,
+    "category": "academic",
+    "difficulty": "advanced",
+    "trigger_conditions": ["research_engagement < 2"],
+    "description": "Stay updated with latest academic developments"
+  },
+  "ch_hackathon_prep_023": {
+    "title": "Form a team and register for upcoming hackathon",
+    "type": "duel",
+    "goal_tags": ["SDE", "Competition"],
+    "interests": ["hackathon", "teamwork"],
+    "karma_reward": 20,
+    "category": "academic",
+    "difficulty": "advanced",
+    "trigger_conditions": ["hackathon_participation == 0"],
+    "description": "Participate in competitive programming events"
+  },
+  "ch_skill_assessment_025": {
+    "title": "Take a comprehensive skill assessment test",
+    "type": "remedial",
+    "goal_tags": ["Self-improvement", "Assessment"],
+    "interests": ["self_assessment", "skills"],
+    "karma_reward": 12,
+    "category": "professional",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["skill_assessment_date > 60_days"],
+    "description": "Identify areas for improvement and growth"
+  },
+  "ch_open_source_contrib_027": {
+    "title": "Make your first open source contribution",
+    "type": "solo",
+    "goal_tags": ["SDE", "Community"],
+    "interests": ["open_source", "coding"],
+    "karma_reward": 18,
+    "category": "professional",
+    "difficulty": "advanced",
+    "trigger_conditions": ["open_source_contributions == 0"],
+    "description": "Contribute to the global developer community"
+  },
+  "ch_peer_tutoring_029": {
+    "title": "Tutor a junior student in your strong subject",
+    "type": "duel",
+    "goal_tags": ["Teaching", "Karma"],
+    "interests": ["tutoring", "helping"],
+    "karma_reward": 14,
+    "category": "social",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["tutoring_sessions < 3"],
+    "description": "Share knowledge while reinforcing your own learning"
+  },
+  "ch_career_plan_031": {
+    "title": "Create a detailed 5-year career roadmap",
+    "type": "solo",
+    "goal_tags": ["Career", "Planning"],
+    "interests": ["career_planning", "goals"],
+    "karma_reward": 16,
+    "category": "professional",
+    "difficulty": "intermediate",
+    "trigger_conditions": ["career_plan_updated > 180_days"],
+    "description": "Map out your professional journey with clear milestones"
+  }
+}

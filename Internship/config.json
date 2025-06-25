@@ -1,0 +1,38 @@
+{
+  "task_limit_per_call": 3,
+  "min_days_between_repeat": 3,
+  "excluded_types": [],
+  "reward_range": [5, 20],
+  "model_type": "random_forest",
+  "training_data_size": 600,
+  "cv_folds": 5,
+  "test_size": 0.2,
+  "overfitting_threshold": 0.3,
+  "feature_scaling": true,
+  "random_seed": 42,
+  "task_bank_path": "task_bank.json",
+  "model_output_path": "model.pkl",
+  "training_dataset_path": "training_dataset.json",
+  "tfidf_max_features": 50,
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000
+  },
+  "model_parameters": {
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2
+    },
+    "gradient_boosting": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.1
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}
