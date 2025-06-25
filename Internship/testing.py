@@ -42,11 +42,11 @@ def test_config_manager():
         # Test default values
         assert config_manager.get('nonexistent', 'default') == 'default'
         
-        print("✓ ConfigManager tests passed")
+        print(" ConfigManager tests passed")
         return True
         
     except Exception as e:
-        print(f"❌ ConfigManager test failed: {e}")
+        print(f" ConfigManager test failed: {e}")
         return False
     finally:
         os.unlink(config_path)
@@ -70,11 +70,11 @@ def test_api_health():
         for field in required_fields:
             assert field in data
         
-        print("✓ API health endpoint test passed")
+        print(" API health endpoint test passed")
         return True
         
     except Exception as e:
-        print(f"❌ API health test failed: {e}")
+        print(f" API health test failed: {e}")
         return False
 
 def test_task_generation_structure():
@@ -112,11 +112,11 @@ def test_task_generation_structure():
         # Should be 500 (server error) if model not loaded, not 422 (validation error)
         assert response.status_code in [200, 500]
         
-        print("✓ Task generation structure test passed")
+        print(" Task generation structure test passed")
         return True
         
     except Exception as e:
-        print(f"❌ Task generation structure test failed: {e}")
+        print(f" Task generation structure test failed: {e}")
         return False
 
 def test_file_existence():
@@ -137,15 +137,15 @@ def test_file_existence():
             missing_files.append(file_path)
     
     if missing_files:
-        print(f"❌ Missing files: {missing_files}")
+        print(f" Missing files: {missing_files}")
         return False
     
-    print("✓ All required files exist")
+    print(" All required files exist")
     return True
 
 def run_basic_tests():
     """Run all basic tests"""
-    print("🧪 Running Basic Test Suite")
+    print(" Running Basic Test Suite")
     print("=" * 50)
     
     tests = [
@@ -163,16 +163,16 @@ def run_basic_tests():
             if test():
                 passed += 1
         except Exception as e:
-            print(f"❌ Test failed with exception: {e}")
+            print(f" Test failed with exception: {e}")
     
     print("\n" + "=" * 50)
     print(f"RESULTS: {passed}/{total} tests passed")
     
     if passed == total:
-        print("✅ ALL BASIC TESTS PASSED")
+        print(" ALL BASIC TESTS PASSED")
         return True
     else:
-        print("❌ SOME TESTS FAILED")
+        print(" SOME TESTS FAILED")
         return False
 
 if __name__ == "__main__":
